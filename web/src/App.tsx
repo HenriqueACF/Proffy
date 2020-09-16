@@ -1,12 +1,15 @@
 import React from 'react';
-import Landing from './pages/Landing';
 
 
+//CSS
 import './assets/styles/global.css'
+
+//ROTAS
+import Routes from './routes';
 
 function App() {
   return (
-    <Landing />
+    <Routes />
   );
 }
 
