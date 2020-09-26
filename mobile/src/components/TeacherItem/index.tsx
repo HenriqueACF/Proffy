@@ -4,7 +4,7 @@ import { RectButton } from 'react-native-gesture-handler';
 
 import heartOutLineIcon from '../../assets/images/icons/heart-outline.png';
 import unfavorite from '../../assets/images/icons/unfavorite.png';
-import whatsapp from '../../assets/images/whatsapp.png';
+import whatsapp from '../../assets/images/icons/whatsapp.png';
 
 import styles from './styles';
 
@@ -33,7 +33,7 @@ function TeacherItem(){
         </Text>
 
         <View style={styles.buttonsContainer}>
-          <RectButton style={styles.favoriteButton}>
+          <RectButton style={[styles.favoriteButton, styles.favorited]}>
             {/* <Image source={heartOutLineIcon} /> */}
             <Image source={unfavorite} />
           </RectButton>
